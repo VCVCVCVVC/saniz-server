@@ -1,0 +1,66 @@
+/* style.css */
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #121212; /* Even darker background */
+    color: #e2e8f0;
+    background-image: url('https://placehold.co/1920x1080/0f0f0f/1a202c?text=Minecraft+Background+Texture'); /* Subtle background texture */
+    background-size: cover;
+    background-attachment: fixed;
+}
+.container {
+    max-width: 960px;
+    background-color: rgba(30, 41, 59, 0.95); /* Slightly transparent dark blue-gray */
+    backdrop-filter: blur(5px); /* Frosted glass effect */
+}
+.discord-button {
+    background-color: #7289da; /* Discord brand color */
+    transition: all 0.3s ease;
+}
+.discord-button:hover {
+    background-color: #677bc4;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+    transform: translateY(-3px);
+}
+.section-card {
+    background-color: #2d3748; /* Darker card background */
+    border: 1px solid #4a5568;
+    transition: transform 0.2s ease-in-out;
+}
+.section-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+.copy-button {
+    background-color: #4CAF50; /* Green copy button */
+    transition: background-color 0.3s ease;
+}
+.copy-button:hover {
+    background-color: #45a049;
+}
+.rule-item, .feature-item {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 1rem;
+}
+.rule-icon svg, .feature-icon svg {
+    color: #a78bfa; /* Purple for icons */
+    margin-right: 0.75rem;
+    width: 1.5rem; /* Adjust size as needed */
+    height: 1.5rem;
+    min-width: 1.5rem; /* Ensure icon doesn't shrink */
+}
+/* Animation for the main title */
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.animate-fade-in-down {
+    animation: fadeInDown 1s ease-out forwards;
+}
